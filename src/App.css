@@ -8,7 +8,7 @@
 body{
   height: 100vh;
   width: 100vw;
-  overflow-y: hidden;
+  overflow-x: hidden;
   background-color: #191818;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@ body{
 .inner-container{
   display: flex;
   width: 100%;
-  border:3px solid grey;
+  border:3px solid skyblue;
   padding: 5px;
   border-radius: 5px;
 }
@@ -44,8 +44,39 @@ body{
 .image{
   margin-top: 25px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 .image img{
   box-sizing: border-box;
   width: 100px;
+}
+.image .temp{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.city{
+  font-size:2.5rem;
+  color: #000000e1;
+}
+.image .long-lat{
+  display: flex;
+  gap: 1.5rem;
+}
+.humid-wind{
+  margin-top: 1.4rem;
+  width: 350px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.humid-wind .humid, .wind{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.humid-wind .humid img , .wind img{
+  width: 35px;
+  height: 35px;
 }
