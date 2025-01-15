@@ -37,6 +37,26 @@ function App() {
       setCityNotFound(true);
       setLoading(false);
       }
+      const weatherIconMap ={
+        "01d":clearIcon,
+        "01n":clearIcon,
+        "02d":cloudIcon,
+        "02n":cloudIcon,
+        "03d":cloudIcon,
+        "03n":cloudIcon,
+        "04d":cloudIcon,
+        "09d":rain,
+        "09n":rain,
+        "10d":rain,
+        "10n":rain,
+        "11d":rain,
+        "13d":snow,
+        "13n":snow,
+        "50d":cloudIcon,
+        "50n":cloudIcon
+      }
+      const weatherIconCode = data.weather[0].icon;
+      setIcon(weatherIconMap[weatherIconCode] || clearIcon);
       setTemp(Math.floor(data.main.temp));
       setCity(data.name);
       setCountry(data.sys.country);
