@@ -12,7 +12,7 @@ import humidity from "./assets/humidity.png";
 import { useState } from "react";
 
 function App() {
-  let apiKey = "bbc771a20ddff0b74b070d30ce8cf88b"; //Temporary key
+  let apiKey = process.env.REACT_APP_API_KEY; //Temporary key
   const [text,setText] = useState("chennai");
   const [icon, setIcon] = useState(clearIcon);
   const [temp, setTemp] = useState(38);

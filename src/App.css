@@ -21,7 +21,9 @@ body{
   flex-direction: column;
   width: 350px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #208dcf;
+  background-image: linear-gradient(135deg, #208dcf 0%, #9599E2 100%);
+  color: #fff;
   border-radius: 5px;
 }
 .inner-container{
@@ -30,6 +32,7 @@ body{
   border:3px solid skyblue;
   padding: 5px;
   border-radius: 5px;
+  background-color: #fff;
 }
 .inner-container .city-search{
   width: 100%;
@@ -60,7 +63,6 @@ body{
 }
 .city{
   font-size:2.5rem;
-  color: #000000e1;
 }
 .image .long-lat{
   display: flex;
