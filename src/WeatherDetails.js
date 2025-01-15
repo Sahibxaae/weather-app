@@ -4,7 +4,7 @@ const WeatherDetails = (props) => {
   return (
     <div>
       <div className="image">
-        <img src={props.clrImage} alt="" />
+        <img src={props.image} alt="" />
         <div className="temp">{props.temperature} °C</div>
         <div className="city">{props.city}</div>
         <div className="country">{props.country}</div>

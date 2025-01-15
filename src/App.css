@@ -50,6 +50,7 @@ body{
   gap: 0.5rem;
 }
 .image img{
+  transition: ease-in 0.3s;
   box-sizing: border-box;
   width: 100px;
 }
