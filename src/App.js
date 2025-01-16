@@ -9,15 +9,15 @@ import rain from "./assets/rain.png";
 import snow from "./assets/snow.png";
 import wind from "./assets/wind (1).png";
 import humidity from "./assets/humidity.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   let apiKey = process.env.REACT_APP_API_KEY; //Temporary key
-  const [text,setText] = useState("chennai");
+  const [text,setText] = useState("tokyo");
   const [icon, setIcon] = useState(clearIcon);
   const [temp, setTemp] = useState(38);
   const [condition, setCondition] = useState("clear");
-  const [city, setCity] = useState("Chennai");
+  const [city, setCity] = useState("tokyo");
   const [country, setCountry] = useState("india");
   const [long, setLong] = useState(0);
   const [lat, setLat] = useState(0);
@@ -45,6 +45,7 @@ function App() {
         "03d":cloudIcon,
         "03n":cloudIcon,
         "04d":cloudIcon,
+        "04n":cloudIcon,
         "09d":rain,
         "09n":rain,
         "10d":rain,
@@ -84,6 +85,9 @@ function App() {
       search();
     }
   }
+  useEffect(function() {
+    search();
+  },[]);
 
   return (
     <div className="container">
