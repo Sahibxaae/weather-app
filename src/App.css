@@ -40,9 +40,8 @@ body{
 }
 .flex{
   display: flex;
-}
-.flex .sec-2{
-  padding:3rem 1rem;
+  align-items: center;
+  justify-content: center;
 }
 .image{
   margin-top: 25px;
@@ -70,7 +69,7 @@ body{
   margin-top: 1.4rem;
   width: 350px;
   display: flex;
-  gap: 6rem;
+  gap: 8rem;
 }
 .humid-wind .humid, .wind{
   text-align: center;

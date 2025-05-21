@@ -381,7 +381,6 @@ function App() {
           min={min}
           max={max}
         />
-        <div className="sec-2"></div>
       </div>
     </div>
   );
